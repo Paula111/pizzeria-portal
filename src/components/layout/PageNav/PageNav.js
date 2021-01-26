@@ -1,11 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './PageNav.scss'
+import styles from './PageNav.scss';
+import { Button } from '@material-ui/core';
 
 const PageNav = () => (
     <nav>
         <div>
-            <NavLink exact to={`${process.env.PUBLIC_URL}/`} activeClassName='active' className={styles.navLink}>Home</NavLink>
+        <Button variant='contained' size='medium' color='secondary'><NavLink exact to={`${process.env.PUBLIC_URL}/`} activeClassName='active' className={styles.navLink}>Home</NavLink></Button>
         </div>
         <div>
             <NavLink to={`${process.env.PUBLIC_URL}/login`} activeClassName='active' className={styles.navLink}>Login</NavLink>

@@ -12,7 +12,6 @@ import OrderNew from './components/views/OrderNew/OrderNew';
 import OrderSingle from './components/views/OrderSingle/OrderSingle';
 
 
-
 function App() {
   return (
     <BrowserRouter basename={'/panel'}>
